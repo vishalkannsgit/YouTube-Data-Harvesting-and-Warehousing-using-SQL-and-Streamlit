@@ -5,11 +5,11 @@ import pandas as pd
 conn = mysql.connector.connect(
     host="127.0.0.1",           # if you are using The "localhost" leave it it will be the 127.0.0.1
     user="root",                # your user name of your user 
-    password="vsvs",            # Password of your database
+    password="************",    # Password of your database
     database="yt"               # Your database name when your run this query of "CREATE DATABASE <NAME>  you should give that name for it"
 )
 cursor = conn.cursor()
-youtube_api_key = "AIzaSyDf5iypG9H0Ccut3ZZA2HvBwo_hSUREZD4"         # your  API key buddy
+youtube_api_key = "try_to_make_your_own_APIKEY"         # your  API key buddy
 def get_channel_info(channel_id):
     youtube = build('youtube', 'v3', developerKey=youtube_api_key)      
     request = youtube.channels().list(
